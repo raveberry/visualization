@@ -1,0 +1,2 @@
+recursive-include raveberry_visualization/images *
+recursive-include raveberry_visualization/shaders *

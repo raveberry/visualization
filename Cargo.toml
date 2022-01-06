@@ -1,0 +1,21 @@
+[package]
+name = "raveberry-visualization"
+version = "0.1.0"
+edition = "2018"
+
+[lib]
+name = "raveberry_visualization"
+path = "raveberry_visualization/src/lib.rs"
+crate-type = ["cdylib", "rlib"]
+
+[[bin]]
+name = "raveberry-visualization"
+path = "raveberry_visualization/src/main.rs"
+
+[dependencies]
+glium = "*"
+image = "*"
+lazy_static = "*"
+rand = "*"
+palette = "*"
+pyo3 = { version = "*", features = ["extension-module"] }
